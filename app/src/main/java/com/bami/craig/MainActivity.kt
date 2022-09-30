@@ -10,6 +10,7 @@ import android.widget.TableLayout
 import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import com.google.android.material.tabs.TabLayout
 import java.util.*
 
 
@@ -24,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 //
 //        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-
+//        var tablayout = findViewById<TabLayout>(R.id.)
     }
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
