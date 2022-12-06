@@ -6,21 +6,14 @@
         android:icon="@drawable/ic_launcher_foreground"
         android:title="@string/action_favorite"
         app:showAsAction="never"/>
-
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"
         app:showAsAction="never"
         app:actionViewClass="androidx.appcompat.widget.Toolbar"
-        app:actionProviderClass="android.widget.ShareActionProvider"
-        />
-
+        app:actionProviderClass="android.widget.ShareActionProvider"/>
     <item
         android:actionLayout="@layout/activity_main"
         app:actionViewClass="androidx.appcompat.widget.Toolbar"
         android:title="કેમ છો"
-        app:showAsAction="never"
-
-        />
-
-
+        app:showAsAction="never" />
 </menu>

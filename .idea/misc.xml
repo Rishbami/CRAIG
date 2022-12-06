@@ -8,15 +8,22 @@
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/drawable/button1.xml" value="0.1785" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/drawable/button2.xml" value="0.1785" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/drawable/colour.xml" value="0.1785" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/drawable/ic_bed.xml" value="0.3175" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/drawable/ic_devices.xml" value="0.142" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1785" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/drawable/ic_menu.xml" value="0.2985" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/drawable/image_rounded_corner.xml" value="0.142" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout-v28/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout-v28/activity_menu_screen.xml" value="0.3328125" />
-        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/activity_menu_screen.xml" value="0.3328125" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/activity_room1.xml" value="0.14130434782608695" />
         <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/activity_screen2.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/menu/tool_bar_items.xml" value="0.2869791666666667" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/fragment_devices.xml" value="0.25" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/fragment_rooms.xml" value="0.2015625" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/fragment_routines.xml" value="0.2015625" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/layout/item_view_layout.xml" value="0.20625" />
+        <entry key="..\:/Users/rishb/StudioProjects/CRAIG/app/src/main/res/menu/tool_bar_items.xml" value="0.1" />
       </map>
     </option>
   </component>

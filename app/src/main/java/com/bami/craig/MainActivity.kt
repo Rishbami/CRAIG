@@ -1,17 +1,11 @@
 package com.bami.craig
-import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.TableLayout
-import android.widget.Toolbar
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.material.dialog.MaterialAlertDialogBuilder
+import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
-import java.util.*
+import com.google.android.material.tabs.TabLayoutMediator
 
 
 class MainActivity : AppCompatActivity() {
@@ -22,16 +16,37 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         setSupportActionBar(findViewById(R.id.my_toolbar))
-//
-//        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-//        var tablayout = findViewById<TabLayout>(R.id.)
+        val tabLayout = findViewById<TabLayout>(R.id.tabmenu)
+        val viewPager = findViewById<ViewPager2>(R.id.viewPager)
+        val viewPagerFragmentAdapter = ViewPagerFragmentAdapter(this)
+
+        viewPager.adapter = viewPagerFragmentAdapter
+        tabLayout.getTabAt(0)?.setIcon(R.drawable.ic_devices)
+
+
+        TabLayoutMediator(tabLayout, viewPager) { tab, position ->
+
+            tab.text = when(position) {
+                0 -> {
+                    "Devices"
+                }
+                1 -> {
+                    "Rooms"
+                }
+                2 -> {
+                    "Routines"
+                }
+                else -> {
+                    "Unknown page"
+                }
+            }
+        }.attach()
     }
 
     override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
 
         R.id.action_settings -> {
-            finish()
             true
         }
 
@@ -47,8 +62,7 @@ class MainActivity : AppCompatActivity() {
 
    override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.tool_bar_items,menu)
+       println("Hello")
         return true
     }
 }
-
-

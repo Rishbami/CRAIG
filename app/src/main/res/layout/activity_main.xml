@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
-        android:layout_marginBottom="727dp"
+        android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
-        android:backgroundTint="@color/wpink"
+        android:backgroundTint="@color/ground_rock"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,53 +28,29 @@
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabmenu"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="516dp"
-        app:layout_constraintBottom_toTopOf="@+id/FAB1"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
-        app:tabMode="fixed">
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:icon="@drawable/ic_devices"
-            android:text="Devices" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Rooms" />
-
-        <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Scenarios" />
-
+        app:tabMode="fixed"
+        android:background="@color/ground_rock">
     </com.google.android.material.tabs.TabLayout>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/FAB1"
-        android:layout_width="wrap_content"
-        app:maxImageSize="40dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="301dp"
-        android:layout_marginTop="621dp"
-        android:layout_marginEnd="54dp"
-        android:layout_marginBottom="54dp"
-        android:clickable="true"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabmenu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@android:drawable/ic_input_add"
-        android:focusable="true"
-        android:contentDescription="TODO" />
+        app:layout_constraintTop_toBottomOf="@+id/tabmenu"
+        app:layout_constraintVertical_bias="1.0" />
 
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
 
 
 
