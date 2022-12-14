@@ -10,7 +10,13 @@
     <color name="light_blue">#FF00e5ff</color>
     <color name="rishiram">#ABCDEF12</color>
     <color name="wellow">#FFF4F478</color>
-    <color name="wpink">#FFFD8181</color>
     <color name="piss_yellow">#FFF1C32D</color>
     <color name="ground_rock">#FFE7DBBE</color>
+    <color name="WWHCSecondary">#FF0C0047</color>
+    <color name="sinbad">#FFA0D1BE</color>
+    <color name="seaNymph">#FF74A39C</color>
+    <color name="cuttySark">#FF507B75</color>
+    <color name="hotPink">#FFFD1E83</color>
+    <color name="deepBlush">#FFF86684</color>
+    <color name="almond">#FFF2D5CD</color>
 </resources>

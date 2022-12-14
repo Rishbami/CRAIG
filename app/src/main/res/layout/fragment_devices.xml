@@ -3,126 +3,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.CRAIG"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".devicesFragment">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/image_rounded_corner"
-                    android:drawableTop="@drawable/ic_lightbulb"
-                    android:drawablePadding="10dp"
-                    android:padding="30dp"
-                    android:text="Lightbulb 1" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/image_rounded_corner"
-                    android:drawableTop="@drawable/ic_lightbulb"
-                    android:drawablePadding="10dp"
-                    android:padding="30dp"
-                    android:text="Lightbulb 2" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/image_rounded_corner"
-                    android:drawableTop="@drawable/ic_lightbulb"
-                    android:drawablePadding="10dp"
-                    android:padding="30dp"
-                    android:text="Lightbulb 1" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/image_rounded_corner"
-                    android:drawableTop="@drawable/ic_lightbulb"
-                    android:drawablePadding="10dp"
-                    android:padding="30dp"
-                    android:text="Lightbulb 2" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/image_rounded_corner"
-                    android:drawableTop="@drawable/ic_lightbulb"
-                    android:drawablePadding="10dp"
-                    android:padding="30dp"
-                    android:text="Lightbulb 1" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/image_rounded_corner"
-                    android:drawableTop="@drawable/ic_lightbulb"
-                    android:drawablePadding="10dp"
-                    android:padding="30dp"
-                    android:text="Lightbulb 2" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/image_rounded_corner"
-                    android:drawableTop="@drawable/ic_lightbulb"
-                    android:drawablePadding="10dp"
-                    android:padding="30dp"
-                    android:text="Lightbulb 1" />
-
-                <Button
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginVertical="20dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/image_rounded_corner"
-                    android:drawableTop="@drawable/ic_lightbulb"
-                    android:drawablePadding="10dp"
-                    android:padding="30dp"
-                    android:text="Lightbulb 2" />
-            </TableRow>
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
@@ -155,12 +47,18 @@
     </ScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addNewComponent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_margin="30dp"
-        >
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_add"
+        app:maxImageSize="35dp"
+        android:contentDescription="TODO">
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
 

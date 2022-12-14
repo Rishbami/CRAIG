@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.CRAIG"
     tools:context=".MainActivity">
 
 
@@ -12,8 +13,6 @@
         android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:backgroundTint="@color/ground_rock"
         android:elevation="4dp"
         android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -27,14 +26,15 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabmenu"
+        app:tabIndicatorFullWidth="false"
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicator="@drawable/image_rounded_tabindicator"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/my_toolbar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
-        app:tabMode="fixed"
-        android:background="@color/ground_rock">
+        app:tabMode="fixed">
     </com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2

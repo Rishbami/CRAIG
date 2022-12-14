@@ -25,8 +25,5 @@ class ViewPagerFragmentAdapter(fragment: MainActivity) :
                return devicesFragment()
            }
         }
-
     }
-
-
 }
